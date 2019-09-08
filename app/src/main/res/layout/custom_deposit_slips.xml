@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            
+            <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/view_status"
+                android:background="#ff0000"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/view_status"
+                android:id="@+id/tv_date"
+                android:text="Date:"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/view_status"
+                android:id="@+id/tv_bank_name"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/tv_date"
+                android:text="Bank Name:"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/view_status"
+                android:id="@+id/tv_bank_account_no"
+                android:layout_margin="5dp"
+                android:layout_below="@id/tv_bank_name"
+                android:text="Bank Account Number:"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/view_status"
+                android:id="@+id/tv_total_amount"
+                android:layout_below="@id/tv_bank_account_no"
+                android:text="Total Amount Depositted:"/>
+
+
+            <RelativeLayout
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="#00ff00"
+                android:id="@+id/view_deposit_status"/>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDashboard">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_logout"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/rl_bank_accounts"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_bank_account"
+                android:layout_centerInParent="true"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank Accounts"
+                android:textColor="@color/whiteColor"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:layout_below="@id/iv_bank_account"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/rl_slips"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_deposit_slips"
+            android:layout_centerInParent="true"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Slips"
+            android:layout_margin="10dp"
+            android:textColor="@color/whiteColor"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_below="@id/iv_deposit_slips"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:textSize="22dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/btn_logout"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>
